@@ -33,4 +33,4 @@ jobs:
       - name: Run sign
         run: |
           python -m pip install --upgrade pip
-          `echo "${{ secrets.URL }}"` | python3 ./main.py
+          `echo "${{ secrets.URL }}"` | tr '#' "\n" | python3 ./main.py
