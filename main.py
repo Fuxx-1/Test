@@ -1,2 +1,2 @@
-a = input()
-print(a)
+Url = os.environ["url"]
+print(Url)
